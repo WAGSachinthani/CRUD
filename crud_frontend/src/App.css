@@ -32,5 +32,12 @@
 }
 
 .users-button:hover {
-  background-color: #eeeeee; /* Background color on hover */
+  background-color: #0000ff36; /* Background color on hover */
+  color: #eeeeee;
 }
+
+.App-logo {
+  width: 150px; /* Adjust the width of the logo as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
