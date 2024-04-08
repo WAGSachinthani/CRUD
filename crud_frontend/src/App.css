@@ -1,25 +1,36 @@
 .App {
   text-align: center;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Ensures the background covers the entire viewport height */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-
-
 .App-header {
-  background-color: #2177f8;
-  min-height: 100vh;
-  display: flex;
+  
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  padding: 10px;
   color: white;
 }
 
-.users-button{
-  font: 18px;
-  padding:20px 40px;
+.users-button {
+  font-size: 18px;
+  padding: 20px 40px;
   border: none;
   border-radius: 30px;
   background-color: aliceblue;
-  cursor:pointer;
+  color: #333333; /* Text color for the button */
+  cursor: pointer;
+}
+
+.users-button:hover {
+  background-color: #eeeeee; /* Background color on hover */
 }

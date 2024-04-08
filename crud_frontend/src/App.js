@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
        
         <h1>
-          Welcome To UserLink !
+          Welcome To User-Link !
         </h1>
         <button className="users-button"><h1>Users</h1></button>
       </header>
