@@ -8,6 +8,7 @@ const UserTable = ({ rows }) => {
                 <TableHead>
                     <TableRow>
                         <TableCell>User ID</TableCell>
+                        <TableCell>Email Address</TableCell>
                         <TableCell>First Name</TableCell>
                         <TableCell>Last Name</TableCell>
                         <TableCell>Actions</TableCell>
@@ -19,6 +20,7 @@ const UserTable = ({ rows }) => {
                         rows.length > 0 ? rows.map(row => (
                             <TableRow key={row.id} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                                 <TableCell component='th' scope="row">{row.id}</TableCell> {/* Fix the interpolation */}
+                                <TableCell component='th' scope="row">{row.emailAddress}</TableCell> {/* Fix the interpolation */}
                                 <TableCell component='th' scope="row">{row.firstName}</TableCell> {/* Fix the interpolation */}
                                 <TableCell component='th' scope="row">{row.lastName}</TableCell> {/* Fix the interpolation */}
                                 <TableCell>
