@@ -4,7 +4,7 @@ const userForm = props => {
     return (
         <Grid
             container
-            spacing={2}
+            spacing={0.5}
             sx={{
                 backgroundColor:'#ffffff',
                 marginBottom:'30px',
@@ -96,7 +96,7 @@ const userForm = props => {
                         marginBottom:'20px',
                         backgroundColor:'#00c6c6',
                         color:'#ffffff',
-                        marginLeft:'15px',
+                        marginLeft:'25px',
                         marginTop:'20px',
                         '&:hover':{
                             opacity:'0.7',
