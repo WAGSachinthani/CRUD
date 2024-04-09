@@ -1,7 +1,17 @@
 import React from 'react';
 import { Grid, Typography } from '@mui/material'; // Import Typography component from Material-UI
+import {useState} from "react";
+
 
 const UserForm = props => {
+
+    const[id,setId]=useState('')
+    const[emailAddress,setEmail]=useState('')
+    const[firstName,setFirstName]=useState('')
+    const[lastName,setLastName]=useState('')
+
+  
+
     return (
         <Grid
             container
@@ -36,8 +46,8 @@ const UserForm = props => {
                     id="id"
                     name="id"
                     sx={{ width: '400px' }}
-                    value={''}
-                    onChange={e => { }}
+                    value={id}
+                    onChange={e => setId(e.target.value)}
                 />
             </Grid>
 
@@ -61,8 +71,8 @@ const UserForm = props => {
                     id="email"
                     name="email"
                     sx={{ width: '400px' }}
-                    value={''}
-                    onChange={e => { }}
+                    value={emailAddress}
+                    onChange={e => setEmail(e.target.value)}
                 />
             </Grid>
 
@@ -86,8 +96,8 @@ const UserForm = props => {
                     id="name"
                     name="name"
                     sx={{ width: '400px' }}
-                    value={''}
-                    onChange={e => { }}
+                    value={firstName}
+                    onChange={e => setFirstName(e.target.value)}
                 />
             </Grid>
 
@@ -111,8 +121,8 @@ const UserForm = props => {
                     id="lname"
                     name="lname"
                     sx={{ width: '400px' }}
-                    value={''}
-                    onChange={e => { }}
+                    value={lastName}
+                    onChange={e => setLastName(e.target.value)}
                 />
             </Grid>
 
